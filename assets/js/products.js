@@ -1,1 +1,254 @@
-window.MAILEY_PRODUCTS=[{id:1,category:"Pulseras",name:"Brazalete de acero inoxidable",detail:"Baño de oro de 14k",price:200},{id:2,category:"Pulseras",name:"Brazalete de acero inoxidable",detail:"Baño de oro de 14k",price:160},{id:3,category:"Pulseras",name:"Cadena de mano",detail:"Baño de oro de 18k",price:200},{id:4,category:"Pulseras",name:"Pulsera de mano",detail:"Baño de oro de 14k",price:150},{id:5,category:"Pulseras",name:"Pulsera de mano",detail:"Baño de oro de 18k",price:220},{id:6,category:"Anillos",name:"Anillo",detail:"Enchapado en oro de 14k",price:130},{id:7,category:"Anillos",name:"Anillo",detail:"Baño de oro de 14k",price:120},{id:8,category:"Aretes",name:"Ear cuff",detail:"Baño de oro de 18k",price:120},{id:9,category:"Aretes",name:"Aretes",detail:"Baño de oro de 14k",price:130},{id:10,category:"Aretes",name:"Ear cuff",detail:"Baño de oro de 14k",price:90},{id:11,category:"Aretes",name:"Aretes",detail:"Baño de oro de 14k",price:180},{id:12,category:"Cadenas",name:"Cadena letra C",detail:"Acero inoxidable",price:130},{id:13,category:"Cadenas",name:"Set de cadena y aretes",detail:"Baño de oro de 14k",price:180},{id:14,category:"Cadenas",name:"Cadena con zirconia",detail:"Plata 925 · 2.3 gramos",price:550},{id:15,category:"Cadenas",name:"Cadena de plata",detail:"Plata 925",price:580},{id:16,category:"Cadenas",name:"Cadena",detail:"Baño de oro de 14k",price:150},{id:17,category:"Cadenas",name:"Set de arete y cadena",detail:"Baño de oro de 14k",price:220},{id:18,category:"Cadenas",name:"Cadena",detail:"Baño de oro de 14k",price:150},{id:19,category:"Cadenas",name:"Cadena",detail:"Baño de oro",price:240},{id:20,category:"Cadenas",name:"Cadena doble",detail:"Baño de oro de 18k",price:250},{id:21,category:"Belleza",name:"Producto de belleza",detail:"Consulta disponibilidad",price:60},{id:22,category:"Belleza",name:"Producto de belleza",detail:"Consulta disponibilidad",price:90},{id:23,category:"Belleza",name:"Producto de belleza",detail:"Consulta disponibilidad",price:95},{id:24,category:"Belleza",name:"Producto de belleza",detail:"Consulta disponibilidad",price:240},{id:25,category:"Belleza",name:"Producto por encargo",detail:"Disponible por encargo",price:null},{id:26,category:"Belleza",name:"Producto por encargo",detail:"Disponible por encargo",price:null},{id:27,category:"Belleza",name:"Crema de mano",detail:"Cuidado personal",price:80},{id:28,category:"Belleza",name:"Producto por encargo",detail:"Disponible por encargo",price:null},{id:29,category:"Moda",name:"Prenda de vestir",detail:"Consulta tallas y disponibilidad",price:480},{id:30,category:"Moda",name:"Prenda de vestir",detail:"Consulta tallas y disponibilidad",price:480},{id:31,category:"Accesorios",name:"Accesorio",detail:"Consulta disponibilidad",price:100}];
+window.MAILEY_PRODUCTS=[
+  {
+    "id": 1,
+    "category": "Pulseras",
+    "name": "Brazalete de acero inoxidable",
+    "detail": "Baño de oro de 14k",
+    "price": 200,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.04 PM (1).jpeg"
+  },
+  {
+    "id": 2,
+    "category": "Pulseras",
+    "name": "Brazalete de acero inoxidable",
+    "detail": "Baño de oro de 14k",
+    "price": 160,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.04 PM.jpeg"
+  },
+  {
+    "id": 3,
+    "category": "Pulseras",
+    "name": "Cadena de mano",
+    "detail": "Baño de oro de 18k",
+    "price": 200,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.06 PM.jpeg"
+  },
+  {
+    "id": 4,
+    "category": "Pulseras",
+    "name": "Pulsera de mano",
+    "detail": "Baño de oro de 14k",
+    "price": 150,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.18 PM (3).jpeg"
+  },
+  {
+    "id": 5,
+    "category": "Pulseras",
+    "name": "Pulsera de mano",
+    "detail": "Baño de oro de 18k",
+    "price": 220,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.21 PM (3).jpeg"
+  },
+  {
+    "id": 6,
+    "category": "Anillos",
+    "name": "Anillo",
+    "detail": "Enchapado en oro de 14k",
+    "price": 130,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.21 PM (1).jpeg"
+  },
+  {
+    "id": 7,
+    "category": "Anillos",
+    "name": "Anillo",
+    "detail": "Baño de oro de 14k",
+    "price": 120,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.21 PM (3).jpeg"
+  },
+  {
+    "id": 8,
+    "category": "Aretes",
+    "name": "Ear cuff",
+    "detail": "Baño de oro de 18k",
+    "price": 120,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.17 PM (1).jpeg"
+  },
+  {
+    "id": 9,
+    "category": "Aretes",
+    "name": "Aretes",
+    "detail": "Baño de oro de 14k",
+    "price": 130,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.17 PM.jpeg"
+  },
+  {
+    "id": 10,
+    "category": "Aretes",
+    "name": "Ear cuff",
+    "detail": "Baño de oro de 14k",
+    "price": 90,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.18 PM (1).jpeg"
+  },
+  {
+    "id": 11,
+    "category": "Aretes",
+    "name": "Aretes",
+    "detail": "Baño de oro de 14k",
+    "price": 180,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.21 PM (2).jpeg"
+  },
+  {
+    "id": 12,
+    "category": "Cadenas",
+    "name": "Cadena letra C",
+    "detail": "Acero inoxidable",
+    "price": 130,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.06 PM (1).jpeg"
+  },
+  {
+    "id": 13,
+    "category": "Cadenas",
+    "name": "Set de cadena y aretes",
+    "detail": "Baño de oro de 14k",
+    "price": 180,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.06 PM (2).jpeg"
+  },
+  {
+    "id": 14,
+    "category": "Cadenas",
+    "name": "Cadena con zirconia",
+    "detail": "Plata 925 · 2.3 gramos",
+    "price": 550,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.19 PM (1).jpeg"
+  },
+  {
+    "id": 15,
+    "category": "Cadenas",
+    "name": "Cadena de plata",
+    "detail": "Plata 925",
+    "price": 580,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.19 PM (2).jpeg"
+  },
+  {
+    "id": 16,
+    "category": "Cadenas",
+    "name": "Cadena",
+    "detail": "Baño de oro de 14k",
+    "price": 150,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.21 PM.jpeg"
+  },
+  {
+    "id": 17,
+    "category": "Cadenas",
+    "name": "Set de arete y cadena",
+    "detail": "Baño de oro de 14k",
+    "price": 220,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.26 PM (1).jpeg"
+  },
+  {
+    "id": 18,
+    "category": "Cadenas",
+    "name": "Cadena",
+    "detail": "Baño de oro de 14k",
+    "price": 150,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.26 PM (2).jpeg"
+  },
+  {
+    "id": 19,
+    "category": "Cadenas",
+    "name": "Cadena",
+    "detail": "Baño de oro",
+    "price": 240,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.26 PM.jpeg"
+  },
+  {
+    "id": 20,
+    "category": "Cadenas",
+    "name": "Cadena doble",
+    "detail": "Baño de oro de 18k",
+    "price": 250,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.34 PM.jpeg"
+  },
+  {
+    "id": 21,
+    "category": "Belleza",
+    "name": "Producto de belleza",
+    "detail": "Consulta disponibilidad",
+    "price": 60,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.05 PM (1).jpeg"
+  },
+  {
+    "id": 22,
+    "category": "Belleza",
+    "name": "Producto de belleza",
+    "detail": "Consulta disponibilidad",
+    "price": 90,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.05 PM.jpeg"
+  },
+  {
+    "id": 23,
+    "category": "Belleza",
+    "name": "Producto de belleza",
+    "detail": "Consulta disponibilidad",
+    "price": 95,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.17 PM (2).jpeg"
+  },
+  {
+    "id": 24,
+    "category": "Belleza",
+    "name": "Producto de belleza",
+    "detail": "Consulta disponibilidad",
+    "price": 240,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.19 PM.jpeg"
+  },
+  {
+    "id": 25,
+    "category": "Belleza",
+    "name": "Producto por encargo",
+    "detail": "Disponible por encargo",
+    "price": null,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.20 PM (1).jpeg"
+  },
+  {
+    "id": 26,
+    "category": "Belleza",
+    "name": "Producto por encargo",
+    "detail": "Disponible por encargo",
+    "price": null,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.20 PM (2).jpeg"
+  },
+  {
+    "id": 27,
+    "category": "Belleza",
+    "name": "Crema de mano",
+    "detail": "Cuidado personal",
+    "price": 80,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.20 PM (3).jpeg"
+  },
+  {
+    "id": 28,
+    "category": "Belleza",
+    "name": "Producto por encargo",
+    "detail": "Disponible por encargo",
+    "price": null,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.20 PM.jpeg"
+  },
+  {
+    "id": 29,
+    "category": "Moda",
+    "name": "Prenda de vestir",
+    "detail": "Consulta tallas y disponibilidad",
+    "price": 480,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.18 PM (2).jpeg"
+  },
+  {
+    "id": 30,
+    "category": "Moda",
+    "name": "Prenda de vestir",
+    "detail": "Consulta tallas y disponibilidad",
+    "price": 480,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.18 PM.jpeg"
+  },
+  {
+    "id": 31,
+    "category": "Accesorios",
+    "name": "Accesorio",
+    "detail": "Consulta disponibilidad",
+    "price": 100,
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.32 PM (2).jpeg",
+    "gallery": [
+      "assets/img/WhatsApp Image 2026-11-16 at 5.33.32 PM (2).jpeg",
+      "assets/img/WhatsApp Image 2026-11-16 at 5.33.33 PM.jpeg"
+    ]
+  }
+];
