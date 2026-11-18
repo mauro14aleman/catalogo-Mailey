@@ -53,7 +53,7 @@ window.MAILEY_PRODUCTS=[
     "name": "Anillo",
     "detail": "Baño de oro de 14k",
     "price": 120,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.21 PM (3).jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.21 PM.jpeg"
   },
   {
     "id": 8,
@@ -125,7 +125,7 @@ window.MAILEY_PRODUCTS=[
     "name": "Cadena",
     "detail": "Baño de oro de 14k",
     "price": 150,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.21 PM.jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.26 PM (1).jpeg"
   },
   {
     "id": 17,
@@ -133,7 +133,7 @@ window.MAILEY_PRODUCTS=[
     "name": "Set de arete y cadena",
     "detail": "Baño de oro de 14k",
     "price": 220,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.26 PM (1).jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.26 PM (2).jpeg"
   },
   {
     "id": 18,
@@ -141,7 +141,7 @@ window.MAILEY_PRODUCTS=[
     "name": "Cadena",
     "detail": "Baño de oro de 14k",
     "price": 150,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.26 PM (2).jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.26 PM.jpeg"
   },
   {
     "id": 19,
@@ -149,7 +149,7 @@ window.MAILEY_PRODUCTS=[
     "name": "Cadena",
     "detail": "Baño de oro",
     "price": 240,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.26 PM.jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.33 PM (2).jpeg"
   },
   {
     "id": 20,
