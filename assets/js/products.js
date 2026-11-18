@@ -5,7 +5,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Brazalete de acero inoxidable",
     "detail": "Baño de oro de 14k",
     "price": 200,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.04 PM (1).jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.04 PM (1).jpeg",
+    "code": "BRA-001",
+    "description": "Un detalle delicado que aporta un toque especial a tu estilo. Lúcelo solo o combínalo para crear tu propia esencia.",
+    "availability": "Disponible"
   },
   {
     "id": 2,
@@ -13,7 +16,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Brazalete de acero inoxidable",
     "detail": "Baño de oro de 14k",
     "price": 160,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.04 PM.jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.04 PM.jpeg",
+    "code": "BRA-002",
+    "description": "Un detalle delicado que aporta un toque especial a tu estilo. Lúcelo solo o combínalo para crear tu propia esencia.",
+    "availability": "Disponible"
   },
   {
     "id": 3,
@@ -21,7 +27,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Cadena de mano",
     "detail": "Baño de oro de 18k",
     "price": 200,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.06 PM.jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.06 PM.jpeg",
+    "code": "BRA-003",
+    "description": "Un detalle delicado que aporta un toque especial a tu estilo. Lúcelo solo o combínalo para crear tu propia esencia.",
+    "availability": "Disponible"
   },
   {
     "id": 4,
@@ -29,7 +38,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Pulsera de mano",
     "detail": "Baño de oro de 14k",
     "price": 150,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.18 PM (3).jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.18 PM (3).jpeg",
+    "code": "BRA-004",
+    "description": "Un detalle delicado que aporta un toque especial a tu estilo. Lúcelo solo o combínalo para crear tu propia esencia.",
+    "availability": "Disponible"
   },
   {
     "id": 5,
@@ -37,7 +49,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Pulsera de mano",
     "detail": "Baño de oro de 18k",
     "price": 220,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.21 PM (3).jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.21 PM (3).jpeg",
+    "code": "BRA-005",
+    "description": "Un detalle delicado que aporta un toque especial a tu estilo. Lúcelo solo o combínalo para crear tu propia esencia.",
+    "availability": "Disponible"
   },
   {
     "id": 6,
@@ -45,7 +60,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Anillo",
     "detail": "Enchapado en oro de 14k",
     "price": 130,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.21 PM (1).jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.21 PM (1).jpeg",
+    "code": "ANI-001",
+    "description": "Una pequeña joya capaz de dar personalidad a cada gesto. Elige el detalle que mejor representa tu estilo.",
+    "availability": "Disponible"
   },
   {
     "id": 7,
@@ -53,7 +71,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Anillo",
     "detail": "Baño de oro de 14k",
     "price": 120,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.21 PM.jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.21 PM.jpeg",
+    "code": "ANI-002",
+    "description": "Una pequeña joya capaz de dar personalidad a cada gesto. Elige el detalle que mejor representa tu estilo.",
+    "availability": "Disponible"
   },
   {
     "id": 8,
@@ -61,7 +82,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Ear cuff",
     "detail": "Baño de oro de 18k",
     "price": 120,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.17 PM (1).jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.17 PM (1).jpeg",
+    "code": "ARE-001",
+    "description": "El toque final para iluminar tu look y expresar tu personalidad en cada ocasión.",
+    "availability": "Disponible"
   },
   {
     "id": 9,
@@ -69,7 +93,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Aretes",
     "detail": "Baño de oro de 14k",
     "price": 130,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.17 PM.jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.17 PM.jpeg",
+    "code": "ARE-002",
+    "description": "El toque final para iluminar tu look y expresar tu personalidad en cada ocasión.",
+    "availability": "Disponible"
   },
   {
     "id": 10,
@@ -77,7 +104,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Ear cuff",
     "detail": "Baño de oro de 14k",
     "price": 90,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.18 PM (1).jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.18 PM (1).jpeg",
+    "code": "ARE-003",
+    "description": "El toque final para iluminar tu look y expresar tu personalidad en cada ocasión.",
+    "availability": "Disponible"
   },
   {
     "id": 11,
@@ -85,7 +115,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Aretes",
     "detail": "Baño de oro de 14k",
     "price": 180,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.21 PM (2).jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.21 PM (2).jpeg",
+    "code": "ARE-004",
+    "description": "El toque final para iluminar tu look y expresar tu personalidad en cada ocasión.",
+    "availability": "Disponible"
   },
   {
     "id": 12,
@@ -93,7 +126,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Cadena letra C",
     "detail": "Acero inoxidable",
     "price": 130,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.06 PM (1).jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.06 PM (1).jpeg",
+    "code": "CAD-001",
+    "description": "Una pieza especial para llevar cerca y completar tu estilo con un detalle elegante.",
+    "availability": "Disponible"
   },
   {
     "id": 13,
@@ -101,7 +137,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Set de cadena y aretes",
     "detail": "Baño de oro de 14k",
     "price": 180,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.06 PM (2).jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.06 PM (2).jpeg",
+    "code": "CAD-002",
+    "description": "Una pieza especial para llevar cerca y completar tu estilo con un detalle elegante.",
+    "availability": "Disponible"
   },
   {
     "id": 14,
@@ -109,7 +148,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Cadena con zirconia",
     "detail": "Plata 925 · 2.3 gramos",
     "price": 550,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.19 PM (1).jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.19 PM (1).jpeg",
+    "code": "CAD-003",
+    "description": "Una pieza especial para llevar cerca y completar tu estilo con un detalle elegante.",
+    "availability": "Disponible"
   },
   {
     "id": 15,
@@ -117,7 +159,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Cadena de plata",
     "detail": "Plata 925",
     "price": 580,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.19 PM (2).jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.19 PM (2).jpeg",
+    "code": "CAD-004",
+    "description": "Una pieza especial para llevar cerca y completar tu estilo con un detalle elegante.",
+    "availability": "Disponible"
   },
   {
     "id": 16,
@@ -125,7 +170,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Cadena",
     "detail": "Baño de oro de 14k",
     "price": 150,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.26 PM (1).jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.26 PM (1).jpeg",
+    "code": "CAD-005",
+    "description": "Una pieza especial para llevar cerca y completar tu estilo con un detalle elegante.",
+    "availability": "Disponible"
   },
   {
     "id": 17,
@@ -133,7 +181,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Set de arete y cadena",
     "detail": "Baño de oro de 14k",
     "price": 220,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.26 PM (2).jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.26 PM (2).jpeg",
+    "code": "CAD-006",
+    "description": "Una pieza especial para llevar cerca y completar tu estilo con un detalle elegante.",
+    "availability": "Disponible"
   },
   {
     "id": 18,
@@ -141,7 +192,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Cadena",
     "detail": "Baño de oro de 14k",
     "price": 150,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.26 PM.jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.26 PM.jpeg",
+    "code": "CAD-007",
+    "description": "Una pieza especial para llevar cerca y completar tu estilo con un detalle elegante.",
+    "availability": "Disponible"
   },
   {
     "id": 19,
@@ -149,7 +203,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Cadena",
     "detail": "Baño de oro",
     "price": 240,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.33 PM (2).jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.33 PM (2).jpeg",
+    "code": "CAD-008",
+    "description": "Una pieza especial para llevar cerca y completar tu estilo con un detalle elegante.",
+    "availability": "Disponible"
   },
   {
     "id": 20,
@@ -157,7 +214,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Cadena doble",
     "detail": "Baño de oro de 18k",
     "price": 250,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.34 PM.jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.34 PM.jpeg",
+    "code": "CAD-009",
+    "description": "Una pieza especial para llevar cerca y completar tu estilo con un detalle elegante.",
+    "availability": "Disponible"
   },
   {
     "id": 21,
@@ -165,7 +225,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Producto de belleza",
     "detail": "Consulta disponibilidad",
     "price": 60,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.05 PM (1).jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.05 PM (1).jpeg",
+    "code": "BEL-001",
+    "description": "Un pequeño aliado para consentirte y sumar un momento especial a tu rutina.",
+    "availability": "Disponible"
   },
   {
     "id": 22,
@@ -173,7 +236,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Producto de belleza",
     "detail": "Consulta disponibilidad",
     "price": 90,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.05 PM.jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.05 PM.jpeg",
+    "code": "BEL-002",
+    "description": "Un pequeño aliado para consentirte y sumar un momento especial a tu rutina.",
+    "availability": "Disponible"
   },
   {
     "id": 23,
@@ -181,7 +247,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Producto de belleza",
     "detail": "Consulta disponibilidad",
     "price": 95,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.17 PM (2).jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.17 PM (2).jpeg",
+    "code": "BEL-003",
+    "description": "Un pequeño aliado para consentirte y sumar un momento especial a tu rutina.",
+    "availability": "Disponible"
   },
   {
     "id": 24,
@@ -189,7 +258,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Producto de belleza",
     "detail": "Consulta disponibilidad",
     "price": 240,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.19 PM.jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.19 PM.jpeg",
+    "code": "BEL-004",
+    "description": "Un pequeño aliado para consentirte y sumar un momento especial a tu rutina.",
+    "availability": "Disponible"
   },
   {
     "id": 25,
@@ -197,7 +269,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Producto por encargo",
     "detail": "Disponible por encargo",
     "price": null,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.20 PM (1).jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.20 PM (1).jpeg",
+    "code": "BEL-005",
+    "description": "Un pequeño aliado para consentirte y sumar un momento especial a tu rutina.",
+    "availability": "Disponible"
   },
   {
     "id": 26,
@@ -205,7 +280,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Producto por encargo",
     "detail": "Disponible por encargo",
     "price": null,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.20 PM (2).jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.20 PM (2).jpeg",
+    "code": "BEL-006",
+    "description": "Un pequeño aliado para consentirte y sumar un momento especial a tu rutina.",
+    "availability": "Disponible"
   },
   {
     "id": 27,
@@ -213,7 +291,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Crema de mano",
     "detail": "Cuidado personal",
     "price": 80,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.20 PM (3).jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.20 PM (3).jpeg",
+    "code": "BEL-007",
+    "description": "Un pequeño aliado para consentirte y sumar un momento especial a tu rutina.",
+    "availability": "Disponible"
   },
   {
     "id": 28,
@@ -221,7 +302,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Producto por encargo",
     "detail": "Disponible por encargo",
     "price": null,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.20 PM.jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.20 PM.jpeg",
+    "code": "BEL-008",
+    "description": "Un pequeño aliado para consentirte y sumar un momento especial a tu rutina.",
+    "availability": "Disponible"
   },
   {
     "id": 29,
@@ -229,7 +313,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Prenda de vestir",
     "detail": "Consulta tallas y disponibilidad",
     "price": 480,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.18 PM (2).jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.18 PM (2).jpeg",
+    "code": "MOD-001",
+    "description": "Una elección versátil para expresar tu estilo y sentirte cómoda en cada ocasión.",
+    "availability": "Disponible"
   },
   {
     "id": 30,
@@ -237,7 +324,10 @@ window.MAILEY_PRODUCTS=[
     "name": "Prenda de vestir",
     "detail": "Consulta tallas y disponibilidad",
     "price": 480,
-    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.18 PM.jpeg"
+    "image": "assets/img/WhatsApp Image 2026-11-16 at 5.33.18 PM.jpeg",
+    "code": "MOD-002",
+    "description": "Una elección versátil para expresar tu estilo y sentirte cómoda en cada ocasión.",
+    "availability": "Disponible"
   },
   {
     "id": 31,
@@ -249,6 +339,9 @@ window.MAILEY_PRODUCTS=[
     "gallery": [
       "assets/img/WhatsApp Image 2026-11-16 at 5.33.32 PM (2).jpeg",
       "assets/img/WhatsApp Image 2026-11-16 at 5.33.33 PM.jpeg"
-    ]
+    ],
+    "code": "ACC-001",
+    "description": "Ese detalle práctico y especial que acompaña tu día a día.",
+    "availability": "Disponible"
   }
 ];
