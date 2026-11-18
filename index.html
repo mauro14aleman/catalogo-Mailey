@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5eee5"><meta name="description" content="MAILEY — joyería, accesorios, moda y belleza.">
+<title>MAILEY | Catálogo</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head><body>
+<div class="welcome" id="welcome"><div class="welcome-mark">M</div><p class="eyebrow">JOYERÍA · MODA · BELLEZA</p><h1>Bienvenido a <em>MAILEY</em></h1><p class="welcome-copy">Detalles que hablan de ti.</p><button class="btn btn-dark" id="enter">Bienvenido a MAILEY <span>→</span></button><small>Descubre nuestra colección</small></div>
+<header class="site-header"><a class="brand" href="#" aria-label="MAILEY inicio"><img src="assets/img/logo-mailey.png" alt="MAILEY"></a><nav><a href="#catalogo">Catálogo</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a></nav><button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button></header>
+<main>
+<section class="hero"><div class="hero-copy"><p class="eyebrow">UNA FORMA DE EXPRESARTE</p><h2>Tu estilo,<br><em>tu esencia.</em></h2><p>Piezas y detalles elegidos para acompañarte todos los días.</p><a class="btn btn-dark" href="#catalogo">Explorar colección <span>→</span></a></div><div class="hero-art"><div class="hero-frame"><img src="assets/img/hero-mailey.jpg" alt="Colección MAILEY" onerror="this.style.display='none'"><span>MAILEY</span></div><div class="hero-note">Elegancia en cada detalle</div></div></section>
+<section class="catalog section" id="catalogo"><div class="section-heading"><p class="eyebrow">DESCUBRE MAILEY</p><h2>Nuestra colección</h2><p>Encuentra ese detalle que va contigo.</p></div>
+<div class="catalog-tools"><div class="filters" id="filters"><button class="filter active" data-category="Todos">Todo</button><button class="filter" data-category="Pulseras">Pulseras</button><button class="filter" data-category="Anillos">Anillos</button><button class="filter" data-category="Aretes">Aretes</button><button class="filter" data-category="Cadenas">Cadenas</button><button class="filter" data-category="Belleza">Belleza</button><button class="filter" data-category="Moda">Moda</button><button class="filter" data-category="Accesorios">Accesorios</button></div><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Buscar productos..."></label></div>
+<p class="result-count" id="resultCount"></p><div class="product-grid" id="productGrid"></div><div class="empty hidden" id="empty">No encontramos productos con esa búsqueda.</div>
+</section>
+<section class="about section" id="nosotros"><div><p class="eyebrow">SOBRE MAILEY</p><h2>Pequeños detalles,<br><em>grandes momentos.</em></h2></div><p>En MAILEY creemos que los accesorios y detalles adecuados hacen especial cada momento. Explora, elige y consulta con nosotros para encontrar tu próximo favorito.</p></section>
+<section class="contact section" id="contacto"><p class="eyebrow">ESTAMOS PARA AYUDARTE</p><h2>¿Te enamoraste de algo?</h2><p>Escríbenos y te ayudamos con tu pedido.</p><a class="btn btn-dark" href="https://wa.me/50586654750?text=Hola%20MAILEY%2C%20quiero%20informaci%C3%B3n%20sobre%20su%20cat%C3%A1logo" target="_blank" rel="noopener">Consultar por WhatsApp ↗</a></section>
+</main><footer><span>MAILEY</span><small>© <span id="year"></span> MAILEY. Todos los derechos reservados.</small><a href="https://wa.me/50586654750" target="_blank" rel="noopener">WhatsApp ↗</a></footer>
+<div class="modal hidden" id="productModal" role="dialog" aria-modal="true"><button class="modal-close" id="modalClose" aria-label="Cerrar">×</button><div class="modal-content" id="modalContent"></div></div>
+<a class="whatsapp-float" href="https://wa.me/50586654750" target="_blank" aria-label="WhatsApp">✆</a>
+<script src="assets/js/products.js"></script><script src="assets/js/app.js"></script>
+</body></html>
