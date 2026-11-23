@@ -12,7 +12,7 @@ El catálogo conserva sus 31 productos actuales en `assets/js/products.js` y sus
 6. En Project Settings > API, copia Project URL y la clave publishable/anon. Nunca uses ni publiques la clave `service_role`.
 7. Completa esos dos valores en `assets/js/supabase-config.js`.
 8. En Authentication > URL Configuration, configura la URL pública de GitHub Pages como Site URL y agrega también la dirección `/admin/` a Redirect URLs.
-9. Publica la rama de producción en GitHub Pages cuando terminen las pruebas.
+9. Ejecuta `database/migrations/002_public_catalog_view.sql` en SQL Editor. Esta migración es obligatoria para que los visitantes solo puedan consultar datos de exhibición y no vean costos ni existencias internas.\n10. Publica la rama de producción en GitHub Pages cuando terminen las pruebas.
 
 ## Seguridad
 
@@ -26,3 +26,7 @@ El catálogo conserva sus 31 productos actuales en `assets/js/products.js` y sus
 ## Operación inicial
 
 Después de importar los productos, entra al administrador y registra las existencias reales y costos. No se asignaron cantidades ni costos estimados durante la migración.
+
+## Protección de datos del catálogo público
+
+La tienda consulta la vista `public.catalog_products`, que solo expone campos de exhibición. Los costos y las existencias permanecen en `public.products`, accesible desde el panel autenticado y autorizado. Si el esquema ya estaba instalado antes de esta mejora, ejecuta la migración `database/migrations/002_public_catalog_view.sql`.
