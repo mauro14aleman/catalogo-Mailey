@@ -1,20 +1,28 @@
 # Configurar MAILEY ADMIN con Supabase
 
-El catálogo público puede seguir usando los 31 productos estáticos mientras se configura Supabase. El panel requiere un proyecto Supabase para autenticar al propietario y guardar cambios desde cualquier dispositivo.
+El catálogo conserva sus 31 productos actuales en `assets/js/products.js` y sus fotografías originales en `assets/img/`. El panel requiere Supabase para sincronizar cambios entre dispositivos.
+
+## Puesta en marcha
 
 1. Crea un proyecto en https://supabase.com/.
-2. En SQL Editor, ejecuta todo el archivo `schema.sql`.
-3. En Authentication > Users, crea el usuario administrador con tu correo y una contraseña segura.
-4. Copia el UUID de ese usuario y ejecuta la sentencia INSERT comentada al final de `schema.sql`, reemplazando el texto de ejemplo.
-5. En Project Settings > API, copia Project URL y la clave publishable/anon (nunca la service_role).
-6. Pega esos dos valores en `assets/js/supabase-config.js`.
-7. En Authentication > URL Configuration, agrega la URL del catálogo y la URL `/admin/` a Site URL / Redirect URLs según corresponda.
+2. En SQL Editor, ejecuta `database/schema.sql`.
+3. En SQL Editor, ejecuta `database/seed-products.sql` una sola vez. Importa los 31 productos actuales, conserva sus códigos, nombres, categorías, precios y rutas de imagen. Los costos quedan vacíos y el inventario comienza en cero porque el catálogo anterior no tenía existencias verificadas.
+4. En Authentication > Users, crea el usuario administrador con tu correo y una contraseña segura.
+5. Copia el UUID del usuario y ejecuta en SQL Editor: `insert into public.admin_users(user_id) values ('UUID-DEL-USUARIO');`.
+6. En Project Settings > API, copia Project URL y la clave publishable/anon. Nunca uses ni publiques la clave `service_role`.
+7. Completa esos dos valores en `assets/js/supabase-config.js`.
+8. En Authentication > URL Configuration, configura la URL pública de GitHub Pages como Site URL y agrega también la dirección `/admin/` a Redirect URLs.
+9. Publica la rama de producción en GitHub Pages cuando terminen las pruebas.
 
 ## Seguridad
-- No publiques la clave `service_role`.
-- El usuario administrador debe existir en `public.admin_users`.
-- Las políticas RLS impiden que visitantes anónimos editen productos o inventario.
-- El borrado del panel es lógico: mueve el producto a papelera; restaurarlo elimina `deleted_at`.
 
-## Migración inicial de productos
-El catálogo conserva su archivo local `assets/js/products.js`. Una vez conectado el proyecto, los productos deben importarse a la tabla `products` para que la administración dinámica los controle. No se hace una importación automática para evitar duplicar o alterar registros sin revisar la correspondencia de fotografías.
+- La ruta `/admin/` no se enlaza desde la tienda pública.
+- La pantalla de administración exige inicio de sesión y comprueba el permiso mediante `is_mailey_admin()`.
+- RLS permite lectura pública solo de productos activos y no eliminados.
+- Solo usuarios registrados en `public.admin_users` pueden administrar productos, inventario y fotografías.
+- La papelera usa borrado lógico (`deleted_at`); restaurar vuelve a activar el producto.
+- No coloques la clave `service_role` en ningún archivo del repositorio.
+
+## Operación inicial
+
+Después de importar los productos, entra al administrador y registra las existencias reales y costos. No se asignaron cantidades ni costos estimados durante la migración.
