@@ -1,13 +1,28 @@
-# MAILEY — Catálogo web
+# MAILEY — Boutique y catálogo web
 
-Sitio responsive en español con identidad champagne/beige, portada de bienvenida, filtros por categoría, buscador, detalle de producto y contacto por WhatsApp (+505 8665 4750).
+Catálogo público en español para joyería, moda, belleza y accesorios. La tienda no muestra enlaces de administración a los clientes.
 
-## Publicación con GitHub Pages
-En el repositorio: Settings → Pages → Deploy from a branch → main → /(root).
+## Tienda pública
+- Diseño Premium Editorial: vino, champagne, crema y dorado.
+- Catálogo con filtros, búsqueda y fichas de producto.
+- Consultas directas a WhatsApp: +505 8665 4750.
+- Enlace a Facebook: https://www.facebook.com/share/p/1A9o1wnssZ/
+- Mantiene el catálogo local como respaldo si Supabase aún no está configurado.
 
-## Contenido pendiente
-- Incorporar las fotografías originales de cada producto y el logotipo final en assets/img/.
-- Confirmar nombres de productos de belleza y algunas prendas.
-- Añadir música solo con archivos de audio que tengas derecho a publicar. El navegador iniciará la reproducción después de que el visitante pulse el botón de bienvenida.
+## Administrador privado
+- Ruta: `/admin/` (inicio de sesión requerido).
+- Alta y edición de productos.
+- Precio, costo, existencias y disponibilidad.
+- Carga de fotografía desde teléfono o computadora.
+- Papelera y restauración de productos.
+- Requiere Supabase; seguir `database/SETUP.md`.
 
-Los precios del catálogo se mantienen en córdobas (C$).
+## Datos y respaldo
+- Productos originales: `assets/js/products.js`.
+- Fotografías originales: `assets/img/`.
+- Importación a Supabase: `database/seed-products.sql`.
+- Seguridad y permisos: `database/schema.sql`.
+- Rama de respaldo: `backup/pre-redesign-2026-11-22`.
+
+## Publicación
+La configuración de Supabase ya está incorporada en la rama de rediseño. La publicación final se realiza desde `main` con GitHub Pages. El panel privado vive en `/admin/` y no se enlaza desde la tienda pública.
