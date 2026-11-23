@@ -11,7 +11,7 @@ async function loadLiveProducts(){
   const client=window.supabase.createClient(cfg.url,cfg.anonKey);
   const {data,error}=await client.from("products").select("*").eq("is_active",true).is("deleted_at",null).order("created_at",{ascending:false});
   if(error)throw error;
-  if(Array.isArray(data)&&data.length)products=data.map(normalizeProduct);
+  if(Array.isArray(data))products=data.map(normalizeProduct);
  }catch(error){console.warn("MAILEY: se mantiene el catálogo local.",error.message)}
 }
 function render(){
