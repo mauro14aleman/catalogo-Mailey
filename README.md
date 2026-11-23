@@ -25,5 +25,4 @@ Catálogo público en español para joyería, moda, belleza y accesorios. La tie
 - Rama de respaldo: `backup/pre-redesign-2026-11-22`.
 
 ## Publicación
-GitHub Pages debe configurarse en Settings → Pages → Deploy from a branch → `main` → `/(root)`.
-La rama de rediseño aún debe configurarse con el logotipo nuevo, Supabase y pruebas antes de fusionarla a `main`.
+La configuración de Supabase ya está incorporada en la rama de rediseño. La publicación final se realiza desde `main` con GitHub Pages. El panel privado vive en `/admin/` y no se enlaza desde la tienda pública.
