@@ -1,1 +1,100 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f5eee5"><meta name="description" content="MAILEY — joyería, moda y belleza"><title>MAILEY | Catálogo</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/styles.css?v=welcome-logo-fix-2"></head><body><div class="welcome" id="welcome"><img class="welcome-logo" src="assets/img/LOGO%20MAILEY-01.png" alt="MAILEY — Jewelry & Accessories"><p class="eyebrow">JOYERÍA · MODA · BELLEZA</p><h1>Bienvenido a <em>MAILEY</em></h1><p>Detalles que hablan de ti.</p><button class="btn dark" id="enter">Bienvenido a MAILEY →</button></div><header><a class="brand" href="#" aria-label="MAILEY"><img src="assets/img/LOGO%20MAILEY-01.png" alt="MAILEY"></a><button id="menu" aria-label="Menú">☰</button><nav id="nav"><a href="#catalogo">Catálogo</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a></nav></header><main><section class="hero"><div><p class="eyebrow">UNA FORMA DE EXPRESARTE</p><h2>Tu estilo,<br><em>tu esencia.</em></h2><p>Piezas y detalles elegidos para acompañarte todos los días.</p><a class="btn dark" href="#catalogo">Explorar colección →</a></div><div class="hero-art cover-gallery"><img class="cover-main" src="assets/img/Retrato%20de%20belleza%20con%20anillos%20joya.png" alt="Colección MAILEY con anillos"><div class="cover-side"><img src="assets/img/Elegancia%20en%20anillos%20y%20pulseras%20de%20oro.png" alt="Anillos y pulseras doradas"><img src="assets/img/Gesto%20de%20silencio%20con%20pulseras%20doradas.png" alt="Pulseras doradas MAILEY"></div></div></section><section class="section" id="catalogo"><div class="heading"><p class="eyebrow">DESCUBRE MAILEY</p><h2>Nuestra colección</h2><p>Encuentra ese detalle que va contigo.</p></div><div class="tools"><div id="filters"><button class="active" data-cat="Todos">Todo</button><button data-cat="Pulseras">Pulseras</button><button data-cat="Anillos">Anillos</button><button data-cat="Aretes">Aretes</button><button data-cat="Cadenas">Cadenas</button><button data-cat="Belleza">Belleza</button><button data-cat="Moda">Moda</button><button data-cat="Accesorios">Accesorios</button></div><input id="search" type="search" placeholder="Buscar productos..."></div><p id="count"></p><div class="products" id="products"></div></section><section class="about section" id="nosotros"><div><p class="eyebrow">SOBRE MAILEY</p><h2>Pequeños detalles,<br><em>grandes momentos.</em></h2></div><p>En MAILEY creemos que los accesorios y detalles adecuados hacen especial cada momento. Explora, elige y consulta con nosotros.</p></section><section class="contact section" id="contacto"><p class="eyebrow">ESTAMOS PARA AYUDARTE</p><h2>¿Te enamoraste de algo?</h2><p>Escríbenos y te ayudamos con tu pedido.</p><a class="btn dark" href="https://wa.me/50586654750" target="_blank" rel="noopener">Consultar por WhatsApp ↗</a></section></main><footer><b>MAILEY</b><span>© <span id="year"></span> MAILEY</span><a href="https://wa.me/50586654750">WhatsApp ↗</a></footer><audio id="mailey-audio" preload="none" loop><source src="assets/audio/MUSICA%20DE%20FONDO%20ALEGRE%20(Sin%20Copyright)%20%2332%20.mp4" type="audio/mp4"></audio><div class="modal hidden" id="modal"><button id="close" aria-label="Cerrar">×</button><div id="detail"></div></div><script src="assets/js/products.js"></script><script src="assets/js/app.js"></script></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3b1724">
+  <meta name="description" content="MAILEY — joyería, moda y accesorios. Encuentra piezas especiales para expresar tu estilo.">
+  <title>MAILEY | Boutique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css?v=premium-editorial-1">
+</head>
+<body>
+  <div class="welcome" id="welcome">
+    <div class="welcome-frame">
+      <img class="welcome-logo" src="assets/img/LOGO%20MAILEY-01.png" alt="MAILEY">
+      <p class="eyebrow">JOYERÍA · MODA · ACCESORIOS</p>
+      <h1>El arte de elegir<br><em>lo que te hace única.</em></h1>
+      <p>Detalles que hablan de ti.</p>
+      <button class="btn btn-gold" id="enter">Entrar a MAILEY <span>↗</span></button>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="MAILEY, inicio">
+      <img src="assets/img/LOGO%20MAILEY-01.png" alt="MAILEY">
+    </a>
+    <button class="menu-toggle" id="menu" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav id="nav" aria-label="Navegación principal">
+      <a href="#catalogo">Colección</a><a href="#nosotros">Nuestra esencia</a><a href="#contacto">Contacto</a>
+    </nav>
+    <a class="header-cta" href="https://wa.me/50586654750" target="_blank" rel="noopener">Hablemos <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">MAILEY · SELECCIÓN ESPECIAL</p>
+        <h2>Un detalle.<br><em>Una historia.</em></h2>
+        <p>Joyas, moda y accesorios elegidos para acompañar tu esencia en cada momento.</p>
+        <a class="btn btn-wine" href="#catalogo">Descubrir colección <span>↓</span></a>
+        <div class="hero-note"><span class="note-line"></span> PIEZAS PARA EXPRESARTE</div>
+      </div>
+      <div class="hero-gallery">
+        <figure class="hero-main"><img src="assets/img/Retrato%20de%20belleza%20con%20anillos%20joya.png" alt="Editorial de joyería MAILEY"></figure>
+        <div class="hero-stack">
+          <figure><img src="assets/img/Elegancia%20en%20anillos%20y%20pulseras%20de%20oro.png" alt="Anillos y pulseras doradas"></figure>
+          <figure><img src="assets/img/Gesto%20de%20silencio%20con%20pulseras%20doradas.png" alt="Pulseras doradas"></figure>
+        </div>
+        <span class="gallery-stamp">MAILEY<br>EST. 2026</span>
+      </div>
+    </section>
+
+    <section class="collection section" id="catalogo">
+      <div class="section-heading">
+        <p class="eyebrow">DESCUBRE TU FAVORITO</p>
+        <h2>La colección <em>MAILEY</em></h2>
+        <p>Encuentra ese detalle que va contigo.</p>
+      </div>
+      <div class="catalog-toolbar">
+        <div id="filters" class="filters" aria-label="Filtrar productos">
+          <button class="active" data-cat="Todos">Todo</button><button data-cat="Pulseras">Pulseras</button><button data-cat="Anillos">Anillos</button><button data-cat="Aretes">Aretes</button><button data-cat="Cadenas">Cadenas</button><button data-cat="Belleza">Belleza</button><button data-cat="Moda">Moda</button><button data-cat="Accesorios">Accesorios</button>
+        </div>
+        <label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="Buscar en la colección..." aria-label="Buscar productos"></label>
+      </div>
+      <p id="count" class="product-count" aria-live="polite"></p>
+      <div class="products" id="products"></div>
+    </section>
+
+    <section class="brand-story section" id="nosotros">
+      <div class="story-mark">M.</div>
+      <div><p class="eyebrow">NUESTRA ESENCIA</p><h2>La belleza está<br>en los <em>detalles.</em></h2></div>
+      <p>En MAILEY creemos que cada elección cuenta. Por eso reunimos joyas, accesorios y moda para que encuentres piezas que reflejen tu personalidad y hagan especial cada momento.</p>
+    </section>
+
+    <section class="contact section" id="contacto">
+      <p class="eyebrow">ESTAMOS PARA TI</p>
+      <h2>¿Encontraste tu próximo<br><em>favorito?</em></h2>
+      <p>Escríbenos. Será un gusto atenderte y ayudarte con tu pedido.</p>
+      <div class="contact-actions">
+        <a class="btn btn-gold" href="https://wa.me/50586654750" target="_blank" rel="noopener">Consultar por WhatsApp ↗</a>
+        <a class="btn btn-outline" href="https://www.facebook.com/share/p/1A9o1wnssZ/" target="_blank" rel="noopener">Visitar Facebook ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#"><img src="assets/img/LOGO%20MAILEY-01.png" alt="MAILEY"></a>
+    <p>Elegancia en cada detalle.</p>
+    <div class="footer-social"><a href="https://wa.me/50586654750" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.facebook.com/share/p/1A9o1wnssZ/" target="_blank" rel="noopener">Facebook</a></div>
+    <small>© <span id="year"></span> MAILEY · Todos los derechos reservados.</small>
+  </footer>
+
+  <audio id="mailey-audio" preload="none" loop><source src="assets/audio/MUSICA%20DE%20FONDO%20ALEGRE%20(Sin%20Copyright)%20%2332%20.mp4" type="audio/mp4"></audio>
+  <div class="modal hidden" id="modal" role="dialog" aria-modal="true" aria-label="Detalle del producto"><button id="close" aria-label="Cerrar">×</button><div id="detail"></div></div>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/app.js?v=premium-editorial-1"></script>
+</body>
+</html>
