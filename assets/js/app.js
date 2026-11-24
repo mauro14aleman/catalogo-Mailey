@@ -38,24 +38,36 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape")closeProduct()});
 document.getElementById("menu").onclick=()=>{const nav=document.getElementById("nav");nav.classList.toggle("open");document.getElementById("menu").setAttribute("aria-expanded",String(nav.classList.contains("open")))};
 document.getElementById("year").textContent=new Date().getFullYear();
 
-// Inicia la reproducción dentro del primer clic/toque (requisito de Chrome).
-// El audio permanece silenciado durante 2 segundos y luego sube al volumen configurado.
+// Reproduce la música después de la primera interacción del usuario.
+// Se conservan los intentos hasta que el navegador acepte iniciar el audio.
 const maileyAudio=document.getElementById("mailey-audio");
 if(maileyAudio){
  maileyAudio.loop=true;
  maileyAudio.volume=0.35;
- document.addEventListener("pointerdown",event=>{
-  if(!event.isTrusted)return;
-  maileyAudio.muted=true;
+ let maileyAudioStarting=false;
+ const startMaileyAudio=event=>{
+  if(event&&!event.isTrusted)return;
+  if(!maileyAudio.paused||maileyAudioStarting)return;
+  maileyAudioStarting=true;
+  maileyAudio.muted=false;
   const playback=maileyAudio.play();
   if(playback&&typeof playback.then==="function"){
    playback.then(()=>{
-    window.setTimeout(()=>{maileyAudio.muted=false;},2000);
-   }).catch(error=>console.info("MAILEY: no se pudo iniciar el audio.",error));
+    maileyAudioStarting=false;
+    document.removeEventListener("pointerdown",startMaileyAudio);
+    document.removeEventListener("keydown",startMaileyAudio);
+   }).catch(error=>{
+    maileyAudioStarting=false;
+    console.info("MAILEY: el navegador aún no permite reproducir el audio.",error);
+   });
   }else{
-   window.setTimeout(()=>{maileyAudio.muted=false;},2000);
+   maileyAudioStarting=false;
+   document.removeEventListener("pointerdown",startMaileyAudio);
+   document.removeEventListener("keydown",startMaileyAudio);
   }
- },{once:true,passive:true});
+ };
+ document.addEventListener("pointerdown",startMaileyAudio,{passive:true});
+ document.addEventListener("keydown",startMaileyAudio);
 }
 
 render();loadLiveProducts().then(render);
