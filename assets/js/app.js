@@ -37,4 +37,17 @@ document.getElementById("modal").onclick=e=>{if(e.target.id==="modal")closeProdu
 document.addEventListener("keydown",e=>{if(e.key==="Escape")closeProduct()});
 document.getElementById("menu").onclick=()=>{const nav=document.getElementById("nav");nav.classList.toggle("open");document.getElementById("menu").setAttribute("aria-expanded",String(nav.classList.contains("open")))};
 document.getElementById("year").textContent=new Date().getFullYear();
+
+// La música comienza 2 segundos después de la primera interacción real del visitante.
+const maileyAudio=document.getElementById("mailey-audio");
+if(maileyAudio){
+ maileyAudio.loop=true;
+ maileyAudio.volume=0.35;
+ document.addEventListener("pointerdown",event=>{
+  if(event.isTrusted){
+   window.setTimeout(()=>maileyAudio.play().catch(error=>console.info("MAILEY: el navegador no permitió iniciar el audio.",error)),2000);
+  }
+ },{once:true,passive:true});
+}
+
 render();loadLiveProducts().then(render);
