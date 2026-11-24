@@ -32,7 +32,6 @@ function openProduct(p){
 function closeProduct(){document.getElementById("modal").classList.add("hidden");document.body.classList.remove("modal-open")}
 document.getElementById("filters").onclick=e=>{if(e.target.dataset.cat){category=e.target.dataset.cat;document.querySelectorAll("#filters button").forEach(b=>b.classList.toggle("active",b===e.target));render()}};
 search.oninput=render;
-document.getElementById("enter").onclick=()=>{const audio=document.getElementById("mailey-audio");if(audio){audio.volume=.3;audio.play().catch(()=>{})}document.getElementById("welcome").classList.add("out")};
 document.getElementById("close").onclick=closeProduct;
 document.getElementById("modal").onclick=e=>{if(e.target.id==="modal")closeProduct()};
 document.addEventListener("keydown",e=>{if(e.key==="Escape")closeProduct()});
