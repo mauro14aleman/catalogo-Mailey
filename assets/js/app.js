@@ -38,14 +38,22 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape")closeProduct()});
 document.getElementById("menu").onclick=()=>{const nav=document.getElementById("nav");nav.classList.toggle("open");document.getElementById("menu").setAttribute("aria-expanded",String(nav.classList.contains("open")))};
 document.getElementById("year").textContent=new Date().getFullYear();
 
-// La música comienza 2 segundos después de la primera interacción real del visitante.
+// Inicia la reproducción dentro del primer clic/toque (requisito de Chrome).
+// El audio permanece silenciado durante 2 segundos y luego sube al volumen configurado.
 const maileyAudio=document.getElementById("mailey-audio");
 if(maileyAudio){
  maileyAudio.loop=true;
  maileyAudio.volume=0.35;
  document.addEventListener("pointerdown",event=>{
-  if(event.isTrusted){
-   window.setTimeout(()=>maileyAudio.play().catch(error=>console.info("MAILEY: el navegador no permitió iniciar el audio.",error)),2000);
+  if(!event.isTrusted)return;
+  maileyAudio.muted=true;
+  const playback=maileyAudio.play();
+  if(playback&&typeof playback.then==="function"){
+   playback.then(()=>{
+    window.setTimeout(()=>{maileyAudio.muted=false;},2000);
+   }).catch(error=>console.info("MAILEY: no se pudo iniciar el audio.",error));
+  }else{
+   window.setTimeout(()=>{maileyAudio.muted=false;},2000);
   }
  },{once:true,passive:true});
 }
