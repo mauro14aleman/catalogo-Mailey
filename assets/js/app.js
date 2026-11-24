@@ -38,13 +38,17 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape")closeProduct()});
 document.getElementById("menu").onclick=()=>{const nav=document.getElementById("nav");nav.classList.toggle("open");document.getElementById("menu").setAttribute("aria-expanded",String(nav.classList.contains("open")))};
 document.getElementById("year").textContent=new Date().getFullYear();
 
-// Reproduce la música después de la primera interacción del usuario.
-// Se conservan los intentos hasta que el navegador acepte iniciar el audio.
+// Reproduce la música tras cualquier interacción real con la página.
+ // Se mantienen los intentos hasta que el navegador acepte iniciar el audio.
 const maileyAudio=document.getElementById("mailey-audio");
 if(maileyAudio){
  maileyAudio.loop=true;
  maileyAudio.volume=0.35;
  let maileyAudioStarting=false;
+ const maileyAudioEvents=["pointerdown","touchstart","click","keydown"];
+ const removeMaileyAudioListeners=()=>{
+  maileyAudioEvents.forEach(type=>document.removeEventListener(type,startMaileyAudio));
+ };
  const startMaileyAudio=event=>{
   if(event&&!event.isTrusted)return;
   if(!maileyAudio.paused||maileyAudioStarting)return;
@@ -54,20 +58,19 @@ if(maileyAudio){
   if(playback&&typeof playback.then==="function"){
    playback.then(()=>{
     maileyAudioStarting=false;
-    document.removeEventListener("pointerdown",startMaileyAudio);
-    document.removeEventListener("keydown",startMaileyAudio);
+    removeMaileyAudioListeners();
    }).catch(error=>{
     maileyAudioStarting=false;
     console.info("MAILEY: el navegador aún no permite reproducir el audio.",error);
    });
   }else{
    maileyAudioStarting=false;
-   document.removeEventListener("pointerdown",startMaileyAudio);
-   document.removeEventListener("keydown",startMaileyAudio);
+   removeMaileyAudioListeners();
   }
  };
- document.addEventListener("pointerdown",startMaileyAudio,{passive:true});
- document.addEventListener("keydown",startMaileyAudio);
+ maileyAudioEvents.forEach(type=>{
+  document.addEventListener(type,startMaileyAudio,{passive:true});
+ });
 }
 
 render();loadLiveProducts().then(render);
